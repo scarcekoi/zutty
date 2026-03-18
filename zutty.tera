@@ -1,0 +1,58 @@
+---
+whiskers:
+  version: "^2.8.0"
+  matrix:
+    - flavor
+  filename: "{{ flavor.identifier }}.Xresources"
+  hex_format: "#{{r}}{{g}}{{b}}{{z}}"
+---
+! Based on https://github.com/catppuccin/catppuccin/blob/0392d297bb38554d571021932e95cd590e71df40/README.md
+
+!!
+! Special colors
+!!
+
+! From Text
+Zutty.fg: {{ text.hex }}
+
+! From Base
+Zutty.bg: {{ base.hex }}
+
+! From Rosewater
+Zutty.cr: {{ rosewater.hex }}
+
+!!
+! Base palette colors
+!!
+
+! Black from Surface1
+Zutty.color0: {{ surface1.hex }}
+Zutty.color8: {{ surface1.hex }}
+
+! Red
+Zutty.color1: {{ red.hex }}
+Zutty.color9: {{ red.hex }}
+
+! Green
+Zutty.color2: {{ green.hex }}
+Zutty.color10: {{ green.hex }}
+
+! Yellow
+Zutty.color3: {{ yellow.hex }}
+Zutty.color11: {{ yellow.hex }}
+
+! Blue
+Zutty.color4: {{ blue.hex }}
+Zutty.color12: {{ blue.hex }}
+
+! Magenta from Pink
+Zutty.color5: {{ pink.hex }}
+Zutty.color13: {{ pink.hex }}
+
+! Cyan from Sky
+Zutty.color6: {{ sky.hex }}
+Zutty.color14: {{ sky.hex }}
+
+! White from Text
+Zutty.color7: {{ text.hex }}
+Zutty.color15: {{ text.hex }}
